@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Приклади різних форм</title>
+  <script>
+    function submitForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // Виконати дії з введеними даними
+      // Наприклад, відправити дані на сервер або вивести їх на екран
+
+      alert("Дані відправлено: " + name + ", " + email + ", " + message);
+    }
+  </script>
+</head>
+<body>
+  <h2>Приклади різних форм</h2>
+
+  <!-- Форма введення даних -->
+  <h3>Форма введення даних</h3>
+  <form>
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Повідомлення:</label>
+    <textarea id="message" name="message" required></textarea><br><br>
+
+    <input type="button" value="Відправити" onclick="submitForm()">
+  </form>
+</body>
+</html>
